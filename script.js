@@ -3,10 +3,7 @@
 let obj1 = { name: "Person 1", age: 5 }; // Question-1
 let obj2 = { age: 5, name: "Person 1" };
 
-let str1 = JSON.stringify(obj1); // Converting objects to strings
-let str2 = JSON.stringify(obj2);
-
-str1 = JSON.stringify(obj1, Object.keys(obj1).sort()); // Sort property names within the strings
+str1 = JSON.stringify(obj1, Object.keys(obj1).sort()); // Converting objects to strings & Sort property names within the strings
 str2 = JSON.stringify(obj2, Object.keys(obj2).sort());
 
 if (str1 === str2) {
